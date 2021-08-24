@@ -1,6 +1,6 @@
 {
 	"name": "redsnapper/socialite-swissrx",
-	"description": "A Laravel Socialite provider for Swiss Rx, anauthentication system for Swiss healthcare professionals.",
+	"description": "A Laravel Socialite provider for Swiss Rx, an authentication system for Swiss healthcare professionals.",
 	"type": "library",
 	"license": "MIT",
 	"authosr": [ 
