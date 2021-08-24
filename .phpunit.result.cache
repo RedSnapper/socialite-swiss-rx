@@ -1,1 +1,1 @@
-{"version":1,"defects":{"RedSnapper\\SwissRx\\Tests\\Feature\\SwissRx::it_authenticates_user_via_swiss_rx_service":4},"times":{"RedSnapper\\SwissRx\\Tests\\Feature\\SwissRx::it_authenticates_user_via_swiss_rx_service":0.032}}
+{"version":1,"defects":{"RedSnapper\\SwissRx\\Tests\\Feature\\SwissRx::it_authenticates_user_via_swiss_rx_service":4,"Warning":6},"times":{"RedSnapper\\SwissRx\\Tests\\Feature\\SwissRx::it_authenticates_user_via_swiss_rx_service":0.032,"Warning":0.003,"RedSnapper\\SwissRx\\Tests\\Feature\\SwissRxTest::it_authenticates_user_via_swiss_rx_service":0.068}}

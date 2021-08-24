@@ -5,7 +5,7 @@ namespace RedSnapper\SwissRx\Tests\Feature;
 use Mockery;
 use Orchestra\Testbench\TestCase;
 
-class SwissRx extends TestCase {
+class SwissRxTest extends TestCase {
 
     /** @test */
     public function it_authenticates_user_via_swiss_rx_service()

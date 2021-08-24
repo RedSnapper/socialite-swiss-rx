@@ -10,7 +10,7 @@ use SocialiteProviders\Manager\OAuth2\User;
 class SwissRx extends AbstractProvider {
 
     /**
-     * Unique SwissRx Identifier.
+     * Unique SwissRxTest Identifier.
      */
     public const IDENTIFIER = 'SWISSRX';
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace RedSnapper\SwissRx\Tests\Feature\Tests;
+namespace RedSnapper\SwissRx\Tests;
 
-use RedSnapper\SwissRx\Tests\Feature\SwissRxServiceProvider;
+use RedSnapper\SwissRx\SwissRxServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
