@@ -1,0 +1,39 @@
+{
+	"name": "redsnapper/socialite-swissrx",
+	"description": "A Laravel Socialite provider for Swiss Rx, anauthentication system for Swiss healthcare professionals.",
+	"type": "library",
+	"license": "MIT",
+	"authosr": [ 
+		{
+			"name": "Anton Sirik",
+			"email": "anton@redsnapper.net"
+		}
+	],
+	"autoload": {
+	    "psr-4": {
+	      	"RedSnapper\\SwissRx\\": "src"
+	    }
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"RedSnapper\\SwissRx\\Tests\\": "tests"
+		}
+	},
+	"require": {
+		"php": "^7.4 || ^8.0",
+		"ext-json": "*",
+		"socialiteproviders/manager": "~4.0",
+		"firebase/php-jwt": "^5.4"
+	},
+	"require-dev": {
+		"orchestra/testbench": "^6.0",
+		"phpunit/phpunit": "^9.5"
+	},
+	"extra": {
+      	"laravel": {
+          	"providers": [
+              	"RedSnapper\\SwissRx\\SwissRxServiceProvider"
+          	]
+      	}
+  	}
+}
