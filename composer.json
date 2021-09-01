@@ -23,13 +23,13 @@
 		"php": "^7.4|^8.0",
 		"ext-json": "*",
 		"socialiteproviders/manager": "~4.0",
-		"firebase/php-jwt": "^5.4",
-		"psalm/plugin-laravel": "^1.5",
-		"vimeo/psalm": "^4.9"
+		"firebase/php-jwt": "^5.4"
 	},
 	"require-dev": {
 		"orchestra/testbench": "^6.0",
-		"phpunit/phpunit": "^9.5"
+		"phpunit/phpunit": "^9.5",
+		"psalm/plugin-laravel": "^1.5",
+		"vimeo/psalm": "^4.9"
 	},
 	"extra": {
       	"laravel": {
