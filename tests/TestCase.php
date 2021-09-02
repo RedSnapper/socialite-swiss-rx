@@ -12,13 +12,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
     // additional setup
   }
 
-  protected function getPackageProviders($app): array
-  {
-    return [
-      SwissRxServiceProvider::class,
-    ];
-  }
-
   protected function getEnvironmentSetUp($app)
   {
     // perform environment setup

@@ -31,13 +31,6 @@
 		"psalm/plugin-laravel": "^1.5",
 		"vimeo/psalm": "^4.9"
 	},
-	"extra": {
-      	"laravel": {
-          	"providers": [
-              	"RedSnapper\\SwissRx\\SwissRxServiceProvider"
-          	]
-      	}
-  	},
     "scripts": {
         "psalm": "vendor/bin/psalm",
         "test": "vendor/bin/phpunit"
