@@ -2,9 +2,9 @@
 ### A Laravel Socialite driver for Swiss RX, an authentication system for Swiss healthcare professionals
 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/vendor_slug/package_slug.svg?style=flat-square)](https://packagist.org/packages/vendor_slug/package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/vendor_slug/package_slug.svg?style=flat-square)](https://packagist.org/packages/redsnapper/socialite-swissrx)
 [![GitHub Tests Action Status](https://github.com/redsnapper/socialite-swiss-rx/workflows/run-tests/badge.svg)](https://github.com/redsnapper/socialite-swiss-rx/actions)
-[![Total Downloads](https://img.shields.io/packagist/dt/vendor_slug/package_slug.svg?style=flat-square)](https://packagist.org/packages/vendor_slug/package_slug)
+[![Total Downloads](https://img.shields.io/packagist/dt/vendor_slug/package_slug.svg?style=flat-square)](https://packagist.org/packages/redsnapper/socialite-swissrx)
 
 ---
 This repo can be used to provide OAuth authentication with [Swiss Rx] (https://swiss-rx-login.ch/).
@@ -93,12 +93,12 @@ vendor/bin/phpunit
 
 ## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+Please see [CHANGELOG](https://github.com/RedSnapper/socialite-swiss-rx/blob/main/CHANGELOG.MD) for more information on what has changed recently.
 
 ## Contributing
 
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/RedSnapper/socialite-swiss-rx/blob/main/.github/workflows/CONTRIBUTING.MD) for details.
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/RedSnapper/socialite-swiss-rx/blob/main/LICENCE.MD) for more information.
