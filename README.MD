@@ -4,7 +4,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vendor_slug/package_slug.svg?style=flat-square)](https://packagist.org/packages/redsnapper/socialite-swissrx)
 [![GitHub Tests Action Status](https://github.com/redsnapper/socialite-swiss-rx/workflows/run-tests/badge.svg)](https://github.com/redsnapper/socialite-swiss-rx/actions)
-[![Total Downloads](https://img.shields.io/packagist/dt/vendor_slug/package_slug.svg?style=flat-square)](https://packagist.org/packages/redsnapper/socialite-swissrx)
+[![Total Downloads](https://img.shields.io/packagist/dt/redsnapper/socialite-swissrx.svg?style=flat-square)](https://packagist.org/packages/redsnapper/socialite-swissrx)
 
 ---
 This repo can be used to provide OAuth authentication with [Swiss Rx] (https://swiss-rx-login.ch/).
@@ -62,7 +62,7 @@ Route::get('/swiss-rx/login', [LoginController::class, 'redirectToProvider'])->n
 Route::get('/swiss-rx/callback', [LoginController::class, 'handleProviderCallback'])->name('login.callback');
 ```
 
-Then in your controller call the `redirectToProvider()` and `handleProviderCallbac()`:
+Then in your controller call the `redirectToProvider()` and `handleProviderCallback()`:
 ```php
 //Http\Controllers\LoginController.php
 
