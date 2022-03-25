@@ -42,6 +42,7 @@ Then go to your services.php and add swissrx credentials. When using your callba
     'client_id' => env('SWISS_RX_KEY'),
     'client_secret' => env('SWISS_RX_SECRET'),
     'redirect' => config('app.url') . "/swiss-rx/callback",
+    'token_leeway'  => env('SWISS_RX_TOKEN_LEEWAY'), // optional - you can use this if you are getting 'Cannot handle token prior to...' exceptions
 ],
 ```
 
