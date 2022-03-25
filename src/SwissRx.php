@@ -7,7 +7,8 @@ use Illuminate\Support\Arr;
 use SocialiteProviders\Manager\OAuth2\AbstractProvider;
 use SocialiteProviders\Manager\OAuth2\User;
 
-class SwissRx extends AbstractProvider {
+class SwissRx extends AbstractProvider
+{
 
     /**
      * Unique SwissRxTest Identifier.
@@ -36,15 +37,25 @@ class SwissRx extends AbstractProvider {
 
     protected function getUserByToken($token)
     {
-        return (array)  JWT::decode($token, str_repeat(config('services.swissrx.client_secret'), 2), ['HS256']);
+        $this->enableTokenValidationLeewayIfConfigured();
+
+        return (array)JWT::decode($token, str_repeat(config('services.swissrx.client_secret'), 2), ['HS256']);
     }
 
     protected function mapUserToObject(array $user)
     {
         return (new User())->setRaw($user)->map([
-            'id' => $user['nameid'],
-            'name' => Arr::get($user, 'unique_name'),
+            'id'    => $user['nameid'],
+            'name'  => Arr::get($user, 'unique_name'),
             'email' => Arr::get($user, 'email'),
         ]);
+    }
+
+    private function enableTokenValidationLeewayIfConfigured()
+    {
+        $leeway = Arr::get($this->config, 'token_leeway');
+        if (is_numeric($leeway)) {
+            JWT::$leeway = $leeway;
+        }
     }
 }
