@@ -58,4 +58,8 @@ class SwissRx extends AbstractProvider
             JWT::$leeway = $leeway;
         }
     }
+    public static function additionalConfigKeys(): array
+    {
+        return ['token_leeway'];
+    }
 }
