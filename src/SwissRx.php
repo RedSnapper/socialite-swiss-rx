@@ -20,7 +20,7 @@ class SwissRx extends AbstractProvider
      *
      * @var array
      */
-    protected $scopes = ['personal'];
+    protected $scopes = ['anonymous'];
 
     protected function getAuthUrl($state)
     {
