@@ -86,6 +86,19 @@ public function handleProviderCallback()
 
 ```
 
+### Scopes
+By default the `anonymous` scope is used, which will not return any user data other than their ID. To retrieve user data use the socialite method `setScopes()` to request the `personal` scope:
+```php
+public function redirectToProvider()
+{
+    return Socialite::driver('swissrx')->with([
+        'lang' => request()->get('lang', 'en')
+    ])
+    ->setScopes(['personal'])
+    ->redirect();
+}
+```
+
 ## Testing
 
 ```bash
