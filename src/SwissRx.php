@@ -3,6 +3,7 @@
 namespace RedSnapper\SwissRx;
 
 use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 use Illuminate\Support\Arr;
 use SocialiteProviders\Manager\OAuth2\AbstractProvider;
 use SocialiteProviders\Manager\OAuth2\User;
@@ -39,7 +40,7 @@ class SwissRx extends AbstractProvider
     {
         $this->enableTokenValidationLeewayIfConfigured();
 
-        return (array)JWT::decode($token, str_repeat(config('services.swissrx.client_secret'), 2), ['HS256']);
+        return (array)JWT::decode($token, new Key(str_repeat(config('services.swissrx.client_secret'), 2), 'HS256'));
     }
 
     protected function mapUserToObject(array $user)
@@ -58,6 +59,7 @@ class SwissRx extends AbstractProvider
             JWT::$leeway = $leeway;
         }
     }
+
     public static function additionalConfigKeys(): array
     {
         return ['token_leeway'];
