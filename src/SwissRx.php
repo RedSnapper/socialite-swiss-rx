@@ -45,7 +45,7 @@ class SwissRx extends AbstractProvider
 
     protected function mapUserToObject(array $user)
     {
-        return (new User())->setRaw($user)->map([
+        return (new SwissRxUser())->setRaw($user)->map([
             'id'    => $user['nameid'],
             'name'  => Arr::get($user, 'unique_name'),
             'email' => Arr::get($user, 'email'),
