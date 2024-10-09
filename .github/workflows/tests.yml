@@ -28,7 +28,7 @@ jobs:
           extensions: mbstring, sqlite3, pdo_sqlite, json, tokenizer, xml, curl, zip
 
       - name: Install Composer dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest
+        run: composer install --prefer-dist --no-progress
 
       - name: Run tests
         run: vendor/bin/phpunit
