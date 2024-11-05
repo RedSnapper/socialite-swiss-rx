@@ -99,6 +99,9 @@ public function redirectToProvider()
 }
 ```
 
+## Older style secrets
+Swiss RX previously provided shorter secrets that were 9 characters long, where these are provided there is a need to repeat the secret twice to form the key used to decode the JWT token passed from Swiss RX. The package has been updated in v1.2 to now also support the new longer length secrets.
+
 ## Testing
 
 ```bash

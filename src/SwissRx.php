@@ -40,7 +40,12 @@ class SwissRx extends AbstractProvider
     {
         $this->enableTokenValidationLeewayIfConfigured();
 
-        return (array)JWT::decode($token, new Key(str_repeat(config('services.swissrx.client_secret'), 2), 'HS256'));
+        // Older secrets provided by Swiss RX were only 9 characters long and so needed to be repeated to construct the correct key for JWT decoding.
+        if (strlen(config('services.swissrx.client_secret')) === 9) {
+            return (array)JWT::decode($token, new Key(str_repeat(config('services.swissrx.client_secret'), 2), 'HS256'));
+        }
+
+        return (array)JWT::decode($token, new Key(config('services.swissrx.client_secret'), 'HS256'));
     }
 
     protected function mapUserToObject(array $user)
