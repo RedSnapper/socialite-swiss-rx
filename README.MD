@@ -99,8 +99,11 @@ public function redirectToProvider()
 }
 ```
 
-## Older style secrets
-Swiss RX previously provided shorter secrets that were 9 characters long, where these are provided there is a need to repeat the secret twice to form the key used to decode the JWT token passed from Swiss RX. The package has been updated in v1.2 to now also support the new longer length secrets.
+## Secret key requirements
+
+As of v1.3, `firebase/php-jwt` has been upgraded to v7 to address CVE-2025-45769 (weak encryption). This version enforces a minimum key length of 32 bytes for HS256 signatures.
+
+Older 9-character secrets previously provided by Swiss RX are **no longer supported**. If you are still using a short secret, you will need to request a new one from Swiss RX.
 
 ## Testing
 
