@@ -3,7 +3,7 @@
 	"description": "A Laravel Socialite provider for Swiss Rx, an authentication system for Swiss healthcare professionals.",
 	"type": "library",
 	"license": "MIT",
-	"authosr": [
+	"authors": [
 		{
 			"name": "Anton Sirik",
 			"email": "anton.sirik@redsnapper.net"
@@ -23,7 +23,7 @@
 		"php": "^8.0|^8.1",
 		"ext-json": "*",
 		"socialiteproviders/manager": "~4.0",
-		"firebase/php-jwt": "^6.4"
+		"firebase/php-jwt": "^7.0"
 	},
 	"require-dev": {
 		"orchestra/testbench": "^v8.0",
