@@ -2,7 +2,7 @@
 
 All notable changes to `redsnapper/socialite-swissrx` will be documented in this file.
 
-## 1.3.0
+## 2.0.0
 
 ### Changed
 

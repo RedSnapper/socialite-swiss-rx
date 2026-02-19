@@ -101,7 +101,7 @@ public function redirectToProvider()
 
 ## Secret key requirements
 
-As of v1.3, `firebase/php-jwt` has been upgraded to v7 to address CVE-2025-45769 (weak encryption). This version enforces a minimum key length of 32 bytes for HS256 signatures.
+As of v2.0, `firebase/php-jwt` has been upgraded to v7 to address CVE-2025-45769 (weak encryption). This version enforces a minimum key length of 32 bytes for HS256 signatures.
 
 Older 9-character secrets previously provided by Swiss RX are **no longer supported**. If you are still using a short secret, you will need to request a new one from Swiss RX.
 
